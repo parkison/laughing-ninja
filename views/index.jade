@@ -1,5 +1,6 @@
-extends layout
+extends layouts/layout
 
 block content
-  h1= title
-  p Welcome to #{title}
+  p This is the #{title} stuff
+
+  div(ng-view)

@@ -1,0 +1,13 @@
+{
+  "name": "laughing-ninja",
+  "version": "0.0.0",
+  "directory": "public/components/",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

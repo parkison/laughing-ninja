@@ -1,2 +1,17 @@
 <h1>This is the Angular View</h1>
-<p>Here's a five: {{data.five}}</p>
+<input ng-model="newEmployee.first" placeholder="First Name">
+<input ng-model="newEmployee.last" placeholder="Last Name">
+<input ng-model="newEmployee.age" placeholder="Age">
+<button ng-click="addEmployee()">Add Employee</button>
+<br>
+<input ng-model="filters.first" placeholder="First Name">
+<input ng-model="filters.last" placeholder="Last Name">
+<input ng-model="filters.age" placeholder="Age">
+<button ng-click="getList()">Filter List</button>
+<table>
+    <tbody ng:repeat="employee in dirData">
+        <tr>
+            <td>{{employee.first}}</td><td>{{employee.last}}</td><td>{{employee.age}}</td>
+        </tr>
+    </tbody>
+</table>

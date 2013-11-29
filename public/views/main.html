@@ -11,7 +11,11 @@
 <table>
     <tbody ng:repeat="employee in dirData">
         <tr>
+        	<td><input type="checkbox"></input></td>
             <td>{{employee.first}}</td><td>{{employee.last}}</td><td>{{employee.age}}</td>
         </tr>
     </tbody>
 </table>
+<button ng-click="">Fire Selected</button>
+<age-chart dir-data="dirData"></age-chart>
+<button ng-click="changeValue()">Change Value</button>
